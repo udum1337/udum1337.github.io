@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Даниил. Проекты</title>
+  <meta name="description" content="Проекты Даниила: iOS-приложение «Не курю», боты на Python и браузерная игра Jelly Stack.">
+  <meta name="theme-color" content="#f2eee5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="site-header">
+    <a class="mark" href="/" aria-label="На главную">Д</a>
+    <nav aria-label="Основная навигация">
+      <a href="#projects">Проекты</a>
+      <a href="#about">О работе</a>
+      <a href="#contact">Связаться</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <p class="eyebrow">Даниил, разработка</p>
+      <h1>Приложения, боты и одна игра</h1>
+      <p class="lead">Пишу на Swift, Python и JavaScript. Здесь проекты, которые можно открыть, потыкать и посмотреть исходники.</p>
+      <div class="intro-links">
+        <a href="https://github.com/udum1337">GitHub ↗</a>
+        <a href="https://t.me/udumix">Telegram ↗</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <h2>Проекты</h2>
+        <p>Четыре проекта. У каждого есть работающая версия или открытый код.</p>
+      </div>
+
+      <article class="project">
+        <div class="project-copy">
+          <div class="project-top">
+            <span class="num">01</span>
+            <span class="status">iOS 17+ · PWA</span>
+          </div>
+          <h3>«Не курю» / I Quit</h3>
+          <p>Приложение для отказа от никотина. Считает дни без сигарет, показывает восстановление организма по 16 вехам и сколько денег уже сэкономлено. Есть 17 достижений, виджеты, напоминания и два языка. Данные хранятся на телефоне, аккаунта нет.</p>
+          <p class="stack">Swift · SwiftUI · SwiftData · WidgetKit</p>
+          <div class="links">
+            <a href="https://udum1337.github.io/i-quit/prototype/">Демо в браузере</a>
+            <a href="https://github.com/udum1337/i-quit">Код</a>
+          </div>
+        </div>
+        <figure class="project-media app">
+          <img src="assets/i-quit.png" alt="Экран приложения «Не курю» с кольцом прогресса и стриком 12 дней">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-copy">
+          <div class="project-top">
+            <span class="num">02</span>
+            <span class="status">Telegram · Python</span>
+          </div>
+          <h3>Бот записи для барбершопа</h3>
+          <p>Клиент выбирает услугу, день и время, оставляет имя и телефон. Мастер получает уведомление в Telegram, клиенту уходят напоминания за сутки и за два часа. В админке видны записи, загрузка, услуги, барберы и выходные.</p>
+          <p class="stack">Python 3.12 · aiogram 3 · SQLite</p>
+          <div class="links">
+            <a href="https://github.com/udum1337/udum1337.github.io/tree/main/projects/booking-bot">Исходники</a>
+            <a href="https://github.com/udum1337/udum1337.github.io/blob/main/projects/booking-bot/README.md">Описание</a>
+          </div>
+          <p class="note">Салон и имена в демо вымышленные. Токен и база не в репозитории.</p>
+        </div>
+        <figure class="project-media bot booking">
+          <img src="assets/booking-bot.png" alt="Иконка бота записи: календарь с галочкой">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-copy">
+          <div class="project-top">
+            <span class="num">03</span>
+            <span class="status">Telegram · Python</span>
+          </div>
+          <h3>Бот-визитка</h3>
+          <p>Меню с разделами, форма заявки и отзывы. Посетитель ставит оценку и пишет пару слов, отзыв появляется после подтверждения владельцем. Заявка приходит в Telegram. Тексты и контакты меняются в одном файле.</p>
+          <p class="stack">Python 3.12 · aiogram 3 · JSON</p>
+          <div class="links">
+            <a href="https://github.com/udum1337/udum1337.github.io/tree/main/projects/visitka-bot">Исходники</a>
+            <a href="https://github.com/udum1337/udum1337.github.io/blob/main/projects/visitka-bot/README.md">Описание</a>
+          </div>
+          <p class="note">Шаблон. В репозитории нет токена и настоящих контактов.</p>
+        </div>
+        <figure class="project-media bot visitka">
+          <img src="assets/visitka-bot.png" alt="Иконка бота-визитки: знак кода на розовом фоне">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project-copy">
+          <div class="project-top">
+            <span class="num">04</span>
+            <span class="status">Браузер · без установки</span>
+          </div>
+          <h3>Jelly Stack</h3>
+          <p>Аркада про башню из желе. Носик ездит над основанием, тап или пробел роняет желешку. Лишнее отрывается и падает, башня кренится и может рухнуть. Чем выше, тем быстрее двигается носик. Рекорд хранится в браузере.</p>
+          <p class="stack">JavaScript · Phaser 3 · Canvas</p>
+          <div class="links">
+            <a href="projects/jelly-stack/">Играть</a>
+            <a href="https://github.com/udum1337/udum1337.github.io/tree/main/projects/jelly-stack">Исходники</a>
+          </div>
+        </div>
+        <figure class="project-media game">
+          <img src="assets/jelly-stack.png" alt="Башня из разноцветных желешек в игре Jelly Stack">
+        </figure>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Как я работаю</h2>
+      <div class="about-grid">
+        <p>Сначала собираю рабочую версию, потом добавляю детали. В «Не курю» сначала был HTML-прототип: на нём проверил экраны, расчёты и первые шаги. Потом перенёс всё в SwiftUI. В боте записи сначала появились слоты и база, потом админка и напоминания.</p>
+        <p>Не люблю демо, где кнопки ничего не делают. Если проект в списке, его можно открыть и проверить: у приложения есть PWA-версия, у ботов исходники и инструкция запуска, в игру можно сыграть прямо здесь.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="eyebrow">Связаться</p>
+      <h2>Нужен сайт, бот или приложение?</h2>
+      <p>Напишите в Telegram. Отвечаю в тот же день, если не сплю.</p>
+      <a class="button" href="https://t.me/udumix">@udumix</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Даниил, 2026</span>
+    <span>Сайт на HTML и CSS. Лежит на GitHub Pages.</span>
+    <a href="https://github.com/udum1337/udum1337.github.io">Код сайта</a>
+  </footer>
+</body>
+</html>

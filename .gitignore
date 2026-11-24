@@ -1,1 +1,9 @@
-# Портфолио
+.env
+.venv/
+__pycache__/
+*.pyc
+*.db
+*.log
+reviews.json
+.DS_Store
+Thumbs.db
